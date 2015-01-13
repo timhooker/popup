@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+h1 {
+  font-size: 2.1em;
+  line-height: 1.33em;
+  margin-bottom: .75em;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: .75em;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+h4 {
+  font-size: .75em;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.7em;
+}
+
+p span,
+a {
+  color: #eb1767;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*Popup Container*/
+#popUp {
+  display: none;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255,255,255,.7);
+  z-index: 5000;
+}
+
+.popUp__container {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #eee;
+  color: #4c4c4e;
+  display: inline-block;
+  position: relative;
+  top: 15em;
+  padding: 2em;
+  text-align: left;
+}
+.popUp__close {
+  position: absolute;
+  border: 1px solid #4c4c4e;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  vertical-align: middle;
+  top: 1em;
+  right: 1em;
+  background-color: #fff;
+  border-radius: 2em;
+}
+
+.drop-down-btn {
+  background-color: #eee;
+  border: 1px solid #4c4c4e;
+  padding: 1em;
+}
+
+.drop-down-btn span:after {
+  content: "";
+  border: 5px solid red;
+  border-color: #4c4c4e transparent transparent transparent;
+  margin-left: .25em;
+  display: inline-block;
+  position: relative;
+  top: .25em;
+}
+
+.action-btn {
+  border: none;
+  background-color: #eb1767;
+  color: #fff;
+  padding: 1em;
+}
+
+/* Setting up the header */
+.logo-container {
+  height: 70px;
+  width: 339px;
+}
+
+.sb-logo {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+}
+
+.sb-logo::after {
+  content: "";
+}
+
+a {
+  text-decoration: none;
+}
+
+header.fixed-header {
+  width: 100%;
+  padding: 1.5em;
+  position: fixed;
+  top: 0;
+  background-color: #ae1f58;
+  height: 7em;
+  z-index: 5000;
+}
+.header-wrapper {
+  margin: 0 7em;
+}
+.main-nav {
+  display: inline-block;
+  float: right;
+  color: #fff;
+  padding-top: 1.5em;
+}
+
+.main-nav li {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 1em;
+  font-weight: bold;
+  padding: .25em;
+}
+
+.main-nav a {
+  color: #fff;
+}
+.main-nav a:hover {
+  border-bottom: 2px solid white
+}
+
+body {
+  position: relative;
+  padding-top: 7em;
+
+}
+
+.big-color {
+  background-color: #eb1767;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.section {
+  width: 66.6666%;
+  margin: 0 auto;
+}
+
+.text-box {
+  box-sizing: border-box;
+  text-align: left;
+  width: 66.6666%;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
+button.apply {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1em;
+  margin: 3em;
+  background-color: #ae1f58;
+  border: 0;
+  border-radius: 3px;
+}
+button.apply:hover {
+  color: #eb1767;
+  background-color: #fff;
+}
+
+.fixed-background {
+  background: url("http://academy.smashingboxes.com/assets/timeline_bg-c6df24fc8cdea898ad4491ad758fdbe7.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0%;
+  position: relative;
+  color: #fff;
+}
+.timeline-wrapper,
+footer {
+  background-color: #292627;
+}
+
+.timeline-wrapper {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timeline-section {
+  position: relative;
+  display: inline-block;
+  height: 200px;
+  overflow: auto;
+  background-color: #fff;
+  width: 66%;
+}
+
+
+.timeline-line {
+  background-color: #eb1767;
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 71%;
+  transition-property: width;
+  webkit-transition-property: width;
+  -webkit-transition-duration: .5s; /* Safari */
+  transition-duration: .5s;
+}
+
+.timeline-section:hover .timeline-line {
+  width: 100%;
+}
+
+
+.timeline-img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.about h1,
+.about h2,
+.about h4,
+.about p {
+  color: #4c4c4e;
+}
+
+.about a,
+.about h3 {
+  color: #eb1767;
+}
+
+.about p {
+  margin-bottom: 1em;
+}
+
+hr {
+  margin: 2em auto;
+  width: 66%;
+
+}
+
+.teacher-bio {
+  display: inline-block;
+  width: 24%;
+  padding: 0 24px;
+  margin: 0 auto 20px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.teacher-bio img {
+  width: 100%;
+}
+
+.info {
+  width: 100%;
+  background: url(http://academy.smashingboxes.com/assets/smashing_academy_map-af7e66d0b42cb911ae927a7e6e4ed9d1.png);
+  min-height: 568px;
+  overflow: hidden;
+}
+
+
+.contact-info {
+  color: #fff;
+  height: 100%;
+  width: 50%;
+  padding: 5% 10%;
+  float: right;
+  background: url(http://academy.smashingboxes.com/assets/pinkfield-59c83ff779bc60b3d18507b180c0f1e8.png);
+  min-height: 568px;
+  height: auto;
+}
+
+.contact-info li {
+  margin-bottom: 1em;
+}
+
+.contact-info i,
+.contact-info p {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contact-info h5 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.apply {
+  background-color: #f4f4f4;
+  padding: 1em 13.333%;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-color: 0;
+}
+thead {
+  background-color: #666;
+  width: 100%;
+}
+
+th:first-child,
+td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+th:last-child,
+td:last-child {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+table button.apply {
+  margin: 0;
+}
+
+td {
+  padding: 1em;
+}
+
+table th {
+  color: #fff;
+  margin: 0;
+  padding: 1em;
+}
+
+.dates:hover {
+  background-color: #eb1767;
+  border-radius: 5px;
+}
+
+.contact-info i {
+  margin-right: 1em;
+}
+
+footer {
+  text-align: left;
+  vertical-align: middle;
+  min-height: 100px;
+  padding: 2em;
+  color: #4c4c4e;
+  overflow: auto;
+}
+
+footer .container {
+  text-align: left;
+}
+footer p {
+  display: inline-block;
+}
+
+.branding {
+  float: left;
+  width: 33%;
+  height: 100%;
+}
+.branding img {
+  height: 100%;
+}
+
+.branding p {
+  font-size: .75em;
+}
+
+footer .subscribe {
+  text-align: center;
+  display: inline-block;
+}
+
+.subscribe span {
+  line-height: 1.5em;
+}
+
+footer .social {
+  float: right;
+  width: 33%;
+  text-align: right;
+}
+
+#newsletter {
+  display: block;
+}
