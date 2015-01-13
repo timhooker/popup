@@ -1,9 +1,9 @@
 jQuery(document).ready(function() {
   $('#popup-btn').click(function (){
-    $( "#popUp" ).show();
+    $( "#popUp" ).fadeIn();
     $( ".popUp__close" ).click(function(){
       console.log("hey Folks");
-      $( "#popUp" ).hide();
+      $( "#popUp" ).fadeOut();
     });
   }) // End button click
 })
